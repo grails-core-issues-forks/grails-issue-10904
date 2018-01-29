@@ -60,6 +60,11 @@
                 this application, click on each to execute its default action:
             </p>
 
+            <p>
+                <g:link controller="example" namespace="example.v1">Example V1</g:link>
+                <g:link controller="example" namespace="example.v2">Example V2</g:link>
+            </p>
+
             <div id="controllers" role="navigation">
                 <h2>Available Controllers:</h2>
                 <ul>
