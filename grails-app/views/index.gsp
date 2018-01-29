@@ -61,20 +61,12 @@
             </p>
 
             <p>
-                <g:link controller="example" namespace="example.v1">Example V1</g:link>
-                <g:link controller="example" namespace="example.v2">Example V2</g:link>
-            </p>
+                %{--<g:link controller="example" namespace="example.v1">Example V1</g:link>--}%
+                %{--<g:link controller="example" namespace="example.v2">Example V2</g:link>--}%
 
-            <div id="controllers" role="navigation">
-                <h2>Available Controllers:</h2>
-                <ul>
-                    <g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
-                        <li class="controller">
-                            <g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link>
-                        </li>
-                    </g:each>
-                </ul>
-            </div>
+                <g:link controller="example" namespace="v1.example">Example V1</g:link>
+                <g:link controller="example" namespace="v2.example">Example V2</g:link>
+            </p>
         </section>
     </div>
 
